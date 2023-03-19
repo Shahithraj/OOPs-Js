@@ -1,0 +1,25 @@
+this keyword works differently in different environment.
+1. Browser environment - (strict and non-strict mode)
+2. Node environment - (strict and non-strict mode)
+
+Non-strict mode                                                        Node                               Browser
+
+1. console.log(this)                   return                     {} - Empty object                     Window Object
+
+2.Inside function                      return                        global object                      Window Object
+
+3.Inside an object                     return                      same object itself                  same object itself
+  
+4.object --> function --> function     return                        global object                      Window Object
+
+
+
+Strict mode                            this                            Node                              Browser
+
+1. console.log(this)                   return                     {} - Empty object                    Window Object
+
+2.Inside function                      return                         Undefined                         Undefined
+
+3.Inside an object                     return                        same object itself                same object itself
+  
+4.object --> function --> function     return                          Undefined                         Undefined
