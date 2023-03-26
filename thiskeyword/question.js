@@ -93,3 +93,15 @@ let object = {
 };
 
 object.method(callback, 2, 3, 4);
+
+let btn = document.querySelector('button');
+
+btn.addEventListener('click', btnFn);
+
+function btnFn() {
+  console.log(this, 'btnnnnn');
+}
+
+window.addEventListener('click', () => {
+  console.log(this, 'window');
+});
