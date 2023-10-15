@@ -72,7 +72,7 @@ let user = {
 
 setTimeout(user.logName, 1000); // --> refer to window object
 
-setTimeout(user.logName(), 1000); // --> refer to use object
+setTimeout(user.logName(), 1000); // --> refer to user object
 
 setTimeout(() => {
   user.logName(); // --> refer to user object
