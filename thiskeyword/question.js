@@ -101,9 +101,34 @@ let btn = document.querySelector('button');
 btn.addEventListener('click', btnFn);
 
 function btnFn() {
-  console.log(this, 'btnnnnn');
+  console.log(this, 'btnnnnn'); --> refer to button element
 }
 
 window.addEventListener('click', () => {
-  console.log(this, 'window');
+  console.log(this, 'window'); --> refer to window element
 });
+
+let calc = {
+   total:0,
+  add(a) {
+     this.total += a;
+    return this;
+  },
+ sub(a) {
+     this.total -= a;
+    return this;
+  },
+   mul(a) {
+     this.total *= a;
+    return this;
+  },
+   div(a) {
+     this.total /= a;
+    return this;
+  },
+}
+
+const result = calc.add(10).sub(5).mul(2).div(5)
+console.log(result.total) --> result will have calc object, so it will return total of calc obj.
+
+
