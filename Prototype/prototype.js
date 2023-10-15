@@ -7,11 +7,11 @@ const Person = function (name, age) {
   this.age = age;
 
   this.getNameandAge = function () {
-    console.log(`Name - ${this.name} and Age - ${this.age}`);
+    console.log(`Name - ${this.name} and Age - ${this.age}`); --> // every object will have the getNameandAge function it will repeating of code
   };
 };
 
-// every object will have the getNameandAge function it will repeating of code, so make it as single prototype
+// Below code make it as single prototype
 
 Person.prototype.getNameandAge = function () {
   console.log(`Name - ${this.name} and Age - ${this.age}`);
