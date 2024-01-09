@@ -1,5 +1,5 @@
 In JavaScript, a constructor function is a special type of function that is used to create and initialize objects. 
-Constructor functions are often used in conjunction with the new keyword to create instances of objects. 
+Constructor functions are often used in conjunction with the new keyword to create instances of objects(create memory for object). 
 The purpose of a constructor function is to define a blueprint for creating objects with specific properties and methods
 
 // Constructor function
