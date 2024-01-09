@@ -4,11 +4,11 @@ The purpose of a constructor function is to define a blueprint for creating obje
 
 // Constructor function
 function Person(name, age) {
-  // Properties
+  // Properties - instance variable
   this.name = name;
   this.age = age;
 
-  // Method
+  // Method - instance method
   this.sayHello = function() {
     console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
   };
