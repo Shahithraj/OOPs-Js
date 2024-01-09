@@ -12,6 +12,10 @@ function Person(name, age) {
   this.sayHello = function() {
     console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
   };
+
+  static greeting () {
+    // static function is only accessed by class not by an object (or instance)
+    console.log("Hello from Person object");
 }
 
 // Creating instances using the constructor function
@@ -21,6 +25,10 @@ var person2 = new Person('Jane', 30);
 // Calling the method
 person1.sayHello(); // Output: Hello, my name is John and I am 25 years old.
 person2.sayHello(); // Output: Hello, my name is Jane and I am 30 years old.
+
+person1.greeting() // Error - it is not a function
+Person.greeting(); // it will print
+
 
 Example 2 :
 
