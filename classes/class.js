@@ -1,7 +1,7 @@
 class Person {
   // Constructor method
   constructor(name, age) {
-    // Properties
+    // Properties - instance variable
     this.name = name;
     this.age = age;
   }
