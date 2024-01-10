@@ -26,6 +26,6 @@ const s1 = new Students("Anand", "John", 20);
 s1.getNameandAge(); // Output: Name - John and Age - 20
 
 // Accessing Students-specific property
-console.log(s1.class); // Output: 10
+console.log(s1.teacher); // Output: Anand
 console.log(s1.name); // Output: John
 
