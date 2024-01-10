@@ -1,0 +1,26 @@
+1. prototypal inheritance : 
+   The process of inheriting properties and methods from a parent object.
+
+2.extends keyword :
+   To inherit properties and methods from a parent class.
+
+3. difference between a class and an object ?
+   - A class is a blueprint for creating objects, while an object is an instance of a class.
+
+4. encapsulation
+    The process of hiding the implementation details and providing an interface for accessing data and methods.
+
+5. super keyword :
+    To inherit properties and methods from a parent class.
+
+6. new Keyword :
+     To create a new instance of an object.
+
+7. this keyword :
+     refer to the current object within a class method.
+
+8. purpose of the constructor method :
+     To initialize the object's properties and perform setup tasks.
+
+9. purpose of the instanceof operator :
+    To check if an object belongs to a specific class.
