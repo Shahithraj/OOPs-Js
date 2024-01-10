@@ -11,7 +11,7 @@ const Person = function (name, age) {
   };
 };
 
-// Below code make it as single prototype
+// Below code make it as single prototype for the entire Person Constructor
 
 Person.prototype.getNameandAge = function () {
   console.log(`Name - ${this.name} and Age - ${this.age}`);
