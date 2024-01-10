@@ -1,0 +1,42 @@
+#Definition
+The process of hiding the implementation details and providing an interface for accessing data and methods.
+
+function createPerson(name, age) {
+  // private variables
+  let _name = name;
+  let _age = age;
+
+  // public methods
+  return {
+    getName: function() {
+      return _name;
+    },
+    getAge: function() {
+      return _age;
+    },
+    setName: function(newName) {
+      _name = newName;
+    },
+    setAge: function(newAge) {
+      if (newAge >= 0) {
+        _age = newAge;
+      } else {
+        console.error("Age cannot be negative");
+      }
+    }
+  };
+}
+
+// Usage
+const person = createPerson("John", 30); 
+
+// person object can have access to public methods not private variables
+
+console.log(person.getName()); // John
+console.log(person.getAge()); // 30
+
+person.setName("Alice");
+person.setAge(25);
+
+console.log(person.getName()); // Alice
+console.log(person.getAge()); // 25
