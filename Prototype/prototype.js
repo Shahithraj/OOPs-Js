@@ -21,3 +21,6 @@ const person1 = new Person('Steve', 30);
 const person2 = new Person('Elon', 40);
 
 console.log(person1);
+
+Person.__proto__ is to print prototype object but to assign a new function to prototype 
+it should do object.prototype.methodName = function.
